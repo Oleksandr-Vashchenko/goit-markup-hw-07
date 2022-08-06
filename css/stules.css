@@ -1,4 +1,4 @@
-   :root {
+:root {
   /* fonts */
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
@@ -76,7 +76,6 @@ img {
   height: auto;
 }
 
-
 /*------------------------------------------------------------------------------------------------------*/
 /* body */
 body {
@@ -126,8 +125,7 @@ body {
 }
 
 /* */
-.nav__link,
-.contacts-link {
+.nav__link {
   color: var(--main-tx-cl);
 
   display: flex;
@@ -145,7 +143,6 @@ body {
 }
 
 /* --------------------------Подчёркивание ссылки ---------------------*/
-
 .nav__link::after {
   position: absolute;
   content: '';
@@ -175,7 +172,7 @@ body {
 .nav__link:focus {
   color: var(--blue-logo-cl);
 }
-/*        !!!!!!!!!!!!!     stop       !!!!!!!!!!!!!!!!!!                 */
+
 /*розмещает в одну строку контакты*/
 .contacts {
   display: flex;
@@ -183,24 +180,31 @@ body {
 }
 
 /*добавляет отступ в контактах*/
-.contacts .contacts-item:not(:last-child) {
+.contacts .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-link {
+.contacts__link {
   color: #757575;
+
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  position: relative;
+  transition: color 250ms var(--cubic);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
 }
 
-
-
-.contacts-link:hover,
-.contacts-link:focus{
-   color: var(--blue-logo-cl);
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--blue-logo-cl);
 }
-
-
-
-
 
 .svg-mail,
 .svg-smartphone {
@@ -210,7 +214,7 @@ body {
   margin-right: 10px;
 }
 
-/* hero section */
+/* ----------------------------------------------hero section--------------------------------------- */
 .hero {
   max-width: 1600px;
   background-color: var(--dark-bg-cl);
@@ -224,7 +228,7 @@ body {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   color: #ffffff;
 
   font-weight: 900;
@@ -256,7 +260,7 @@ body {
   background-color: #188ce8;
 }
 
-/* Модальное окно - Заказать услугу */
+/*--------------------------- Модальное окно - Заказать услугу--------------------------------- */
 .backdrop {
   position: fixed;
   top: 0;
@@ -297,7 +301,7 @@ body {
   transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
 }
 
-.close-modal {
+.btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -314,22 +318,21 @@ body {
   cursor: pointer;
 }
 
-.button.close-modal:hover,
-.button.close-modal:focus {
-   color: #2196f3; 
+.btn-close:hover,
+.btn-close:focus {
+  color: #2196f3;
 }
 
-.svg-close-modal {
+.btn-close__icon {
   width: 18px;
   height: 18px;
   fill: currentColor;
 }
 
-/*-----------------------------------------------------------------------------------------------*/
-.modal-form {
+.order {
   padding: 40px;
 }
-
+/*------------------------------------------------------------stop-------------------------------------------*/
 .modal-form-header {
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -1004,6 +1007,3 @@ body {
 
   padding: 63px 24px;
 }
-
- 
-
