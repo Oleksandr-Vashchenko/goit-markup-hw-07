@@ -1,15 +1,14 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: rgb(235, 195, 135);
   }
 
   .mobaile-menu-open {
     display: none;
   }
-  
-/*==================================heder====================================*/
- 
+
+  /*==================================heder====================================*/
+
   .heder-container,
   .nav,
   .nav-list {
@@ -66,11 +65,10 @@
   .contact-tel {
     font-style: normal;
     color: inherit;
-   
+
     transition: color var(--transition-dur-and-func);
   }
 
- 
   .nav-link:hover,
   .nav-link:focus,
   .contact-mail:hover,
@@ -80,6 +78,20 @@
     color: var(--Primary-brand-accent);
   }
   /*==================================heder====================================*/
-
   /*==================================hero====================================*/
-}
+
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/tablet-hiro.jpg);
+  }
+
+  .main-title {
+    margin-bottom: 40px;
+  }
+/*==================================hero====================================*/
+/*===========================activity-company================================*/
+
+
+/*===========================activity-company================================*/
+  }
