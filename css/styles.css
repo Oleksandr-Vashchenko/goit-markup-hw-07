@@ -98,11 +98,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
-
 /* @media screen and (max-width: 479px) {
   .container {
     width: 428px;
@@ -122,6 +117,11 @@ body {
 }
 
 /*==================================heder====================================*/
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .container {
   padding-left: 16px;
   padding-right: 16px;
@@ -181,7 +181,7 @@ body {
 /*==================================hero====================================*/
 .hero {
   max-width: 428px;
-    margin: auto;
+  margin: auto;
   padding-top: 112px;
   padding-bottom: 112px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -222,51 +222,31 @@ body {
 .activity-company-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  row-gap: 72px;
 }
-.activity-company-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-}
+
 .company-icon-box {
-  width: 264px;
-  height: 112px;
-  margin-bottom: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: var(--light);
-  border-radius: 4px;
+  display: none;
 }
-.company-icon {
-  width: 64px;
-  height: 64px;
+.activity-company-title {
+  text-align: center;
 }
-/*-----------------------------work--------------------------------------------------*/
+ /*=============================work======================================*/
 .our-work {
-  padding-top: 0px;
+  display: none;
 }
-.our-work-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-}
-.our-work-item {
-  flex-basis: calc((100% - 2 * 24px) / 3);
-}
-
-/*-----------------------------team---------------------------------------------------*/
+/*=============================work======================================*/
+/*=============================team======================================*/
 .team {
   background-color: var(--light);
 }
 .team-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  row-gap: 72px;
 }
-.team-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-}
+
 .card-team {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -279,7 +259,8 @@ body {
   text-align: center;
   margin-bottom: 8px;
 }
-/*==================================social=====================================*/
+
+/*-----social-----*/
 .social-list {
   display: flex;
   justify-content: center;
@@ -309,6 +290,7 @@ body {
   width: 16px;
   height: 16px;
 }
+/*=============================team======================================*/
 /*==================================customers=====================================*/
 .customers-list {
   display: flex;

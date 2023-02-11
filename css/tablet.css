@@ -89,9 +89,30 @@
   .main-title {
     margin-bottom: 40px;
   }
-/*==================================hero====================================*/
-/*===========================activity-company================================*/
+  /*==================================hero====================================*/
+  /*===========================activity-company================================*/
 
-
-/*===========================activity-company================================*/
+  /*===========================activity-company================================*/
+  .activity-company-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
   }
+  .activity-company-item {
+    /*  flex-basis: calc((100% - 3 * 24px) / 4); */
+    flex-basis: calc((100% - 1 * 24px) / 2);
+  }
+  .activity-company-title {
+    text-align: left;
+  }
+  /*=============================team======================================*/
+  .team-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+  /*=============================team======================================*/
+ 
+}
