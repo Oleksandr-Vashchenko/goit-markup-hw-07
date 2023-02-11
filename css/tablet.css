@@ -91,8 +91,6 @@
   }
   /*==================================hero====================================*/
   /*===========================activity-company================================*/
-
-  /*===========================activity-company================================*/
   .activity-company-list {
     display: flex;
     flex-wrap: wrap;
@@ -105,6 +103,8 @@
   .activity-company-title {
     text-align: left;
   }
+  /*===========================activity-company================================*/
+  
   /*=============================team======================================*/
   .team-list {
     display: flex;
@@ -114,9 +114,38 @@
     column-gap: 24px;
   }
   /*=============================team======================================*/
- /*==================================customers==============================*/
-.customers-list {
+  /*==================================customers==============================*/
+  .customers-list {
     column-gap: 24px;
   }
   /*==================================customers==============================*/
+  /*==================================footer==============================*/
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    align-items: baseline;
+  }
+
+  .container-logo,
+  .social-media,
+  .footer-form {
+    align-items: flex-start;
+  }
+
+  .container-logo,
+  .footer-form {
+    margin-left: 92px;
+  }
+
+  .footer-input-container {
+    flex-direction: row;
+    column-gap: 24px;
+  }
+  .footer-form-input {
+    width: 264px;
+  }
+  /*==================================footer==============================*/
 }

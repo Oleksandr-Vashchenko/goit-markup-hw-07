@@ -231,7 +231,7 @@ body {
 .activity-company-title {
   text-align: center;
 }
- /*=============================work======================================*/
+/*=============================work======================================*/
 .our-work {
   display: none;
 }
@@ -291,7 +291,7 @@ body {
   height: 16px;
 }
 /*=============================team======================================*/
-/*==================================customers=====================================*/
+/*==================================customers============================*/
 .customers-list {
   display: flex;
   flex-wrap: wrap;
@@ -327,33 +327,38 @@ body {
 .customers-link:focus .customers-icon {
   fill: var(--Primary-brand-accent);
 }
-/*==================================customers=====================================*/
+/*==================================customers=================================*/
 /*==================================footer====================================*/
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
+
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  row-gap: 72px;
 }
+
 .container-logo {
-  margin-right: 120px;
-}
-.logo-footer {
-  display: block;
-  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
 }
 
 .footer-text {
-  max-width: 264px;
+  max-width: 268px;
   color: var(--accent);
 }
+
 .social-media {
-  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
 }
-/*==============================footer-icon==========================*/
 
 .footer-suptitle {
   font-weight: 500;
@@ -362,16 +367,19 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--withe);
-  margin-bottom: 16px;
 }
+
+/*--------footer-icon------*/
 .footer-list-icon {
   display: flex;
   gap: 16px;
 }
+
 .footer-item-icon {
   width: 40px;
   height: 40px;
 }
+
 .footer-link-icon {
   width: 100%;
   height: 100%;
@@ -384,16 +392,25 @@ body {
   fill: var(--light);
   transition: background-color var(--transition-dur-and-func);
 }
+
 .footer-link-icon:hover,
 .footer-link-icon:focus {
   background-color: var(--success);
 }
+
 .footer-icon {
   width: 24px;
   height: 24px;
 }
-
-/*=======================footer-form========================*/
+/*--------footer-icon------*/
+/*------footer-form--------*/
+.footer-form,
+.footer-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
 .footer-form-input-desc {
   font-weight: 500;
   font-size: 16px;
@@ -403,16 +420,14 @@ body {
   color: var(--withe);
 
   display: flex;
-  margin-bottom: 16px;
 }
 
 .footer-form-input {
-  width: 264px;
+  width: 100%;
   font-size: 14px;
   line-height: 1.6;
   letter-spacing: 0.04em;
   color: var(--light);
-  margin-right: 24px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -453,7 +468,7 @@ body {
   height: 20px;
   fill: var(--withe);
 }
-
+/*==================================footer====================================*/
 /*================///////////////////////////////======portfolio=========////////////////=================*/
 .border-header {
   border-bottom: 1px solid var(--accent);
