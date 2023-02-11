@@ -294,8 +294,10 @@ body {
 /*==================================customers=====================================*/
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  row-gap: 72px;
+  column-gap: 16px;
 }
 .customers-item {
   width: 168px;
@@ -325,7 +327,7 @@ body {
 .customers-link:focus .customers-icon {
   fill: var(--Primary-brand-accent);
 }
-
+/*==================================customers=====================================*/
 /*==================================footer====================================*/
 .footer {
   background-color: #2e2f42;
