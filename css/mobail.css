@@ -5,7 +5,14 @@
     margin-left: auto;
     margin-right: auto;
   }
- 
+  .mobaile-addr_link-tel{
+    font-size: 36px; 
+  }
+  /*=================================modal window==========================*/
+  .modal{
+    width: 392px;
+  }
+  /*=================================modal window==========================*/
 }
 
 

@@ -33,7 +33,7 @@
             <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
-        
+
         <address class="contact">
           <ul class="contact-list">
             <li class="contact-item">
@@ -44,9 +44,73 @@
             </li>
           </ul>
         </address>
-        <button class="mobaile-menu-open"><svg class="mobaile-menu-open_icon">
-          <use href="./images/icons.svg#burger"></use>
-        </svg></button>
+
+        
+        <button class="mobaile-menu-open" data-menu-open>
+          <svg class="mobaile-menu-open_icon">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobaile-menu is-hidden" data-menu>
+        <div class="container mobaile-menu_container  ">
+          <div>
+            <button class="mobaile-menu_close-btn" type="button">
+              <svg class="mobaile-menu_close-icon">
+                <use href="./images/icons.svg#close-modal"></use>
+              </svg>
+            </button>
+            <nav class="mobaile-nav">
+              <ul class="mobaile-nav-list">
+                <li class="mobaile-nav-item"><a class="mobaile-nav-link" href="">Studio</a></li>
+                <li class="mobaile-nav-item"><a class="mobaile-nav-link" href="">Portfolio</a></li>
+                <li class="mobaile-nav-item"><a class="mobaile-nav-link" href="">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mobaile-addr">
+              <ul class="mobaile-addr-list">
+                <li class="mobaile-addr-item">
+                  <a class="mobaile-addr_link-tel" href="">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobaile-addr-item">
+                  <a class="mobaile-addr_link-mail" href="">info@devstudio.com</a>
+                </li>
+              </ul>
+            </address>
+            <ul class="mobaile-icon-list">
+              <li class="mobaile-icon-item">
+                <a class="mobaile-icon-link" href=""
+                  ><svg class="mobaile-icon">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobaile-icon-item">
+                <a class="mobaile-icon-link" href=""
+                  ><svg class="mobaile-icon">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobaile-icon-item">
+                <a class="mobaile-icon-link" href=""
+                  ><svg class="mobaile-icon">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobaile-icon-item">
+                <a class="mobaile-icon-link" href=""
+                  ><svg class="mobaile-icon">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -56,10 +120,10 @@
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="btn modal-btn" data-modal-open type="button">Order Service</button>
         </div>
-      </section> 
+      </section>
 
       <!--activity-company-->
-        <section class="section activity-company">
+      <section class="section activity-company">
         <div class="container">
           <h2 class="hidden-title">work</h2>
           <ul class="activity-company-list">
@@ -116,10 +180,10 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
       <!--work-->
-       <section class="section our-work">
+      <section class="section our-work">
         <div class="container">
           <h2 class="title our-work-title">What are we doing</h2>
           <ul class="our-work-list">
@@ -139,7 +203,7 @@
       </section>
 
       <!--team-->
-       <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="title team-title">Our Team</h2>
           <ul class="team-list">
@@ -296,10 +360,10 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
     </main>
     <!--customers-->
-     <section class="section">
+    <section class="section">
       <div class="container">
         <h2 class="title">Customers</h2>
         <ul class="customers-list">
@@ -347,10 +411,10 @@
           </li>
         </ul>
       </div>
-    </section> 
+    </section>
 
     <!--footer-->
-     <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="container-logo">
           <a class="logo logo-footer" href="">WEB<span class="logo-withe">STUDIO</span></a>
@@ -359,7 +423,7 @@
             growth solutions.
           </p>
         </div>
-         <div class="social-media">
+        <div class="social-media">
           <h2 class="footer-suptitle">Social media</h2>
           <ul class="footer-list-icon">
             <li class="footer-item-icon">
@@ -391,36 +455,36 @@
               </a>
             </li>
           </ul>
-        </div> 
-        
-       <form class="footer-form">
+        </div>
+
+        <form class="footer-form">
           <label class="footer-form-input-desc" for="footer-email">Subscribe</label>
           <div class="footer-input-container">
-          <input
-            class="footer-form-input"
-            type="email"
-            name="user_email"
-            id="footer-email"
-            placeholder="E-mail"
-            required
-            title="Email"
-            minlength="2"
-          /> 
+            <input
+              class="footer-form-input"
+              type="email"
+              name="user_email"
+              id="footer-email"
+              placeholder="E-mail"
+              required
+              title="Email"
+              minlength="2"
+            />
 
-         <button class="footer-btn" type="submit">
-            Subscribe
-            <span class="footer-form-btn">
-              <svg class="footer-form-icon">
-                <use href="./images/icons.svg#frame"></use>
-              </svg>
-            </span>
-          </button> 
-        </div>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <span class="footer-form-btn">
+                <svg class="footer-form-icon">
+                  <use href="./images/icons.svg#frame"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
         </form>
       </div>
-    </footer> 
+    </footer>
     <!--modal window-->
-   <!--  <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-slose-btn" data-modal-close type="button">
           <svg class="modal-slose-btn-icon">
@@ -521,7 +585,8 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>  -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
