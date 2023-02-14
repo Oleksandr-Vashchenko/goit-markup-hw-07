@@ -45,17 +45,16 @@
           </ul>
         </address>
 
-        
-        <button class="mobaile-menu-open" data-menu-open>
+        <button class="mobaile-menu-open" type="button" data-menu-open>
           <svg class="mobaile-menu-open_icon">
             <use href="./images/icons.svg#burger"></use>
           </svg>
         </button>
       </div>
       <div class="mobaile-menu is-hidden" data-menu>
-        <div class="container mobaile-menu_container  ">
+        <div class="container mobaile-menu_container">
           <div>
-            <button class="mobaile-menu_close-btn" type="button">
+            <button class="mobaile-menu_close-btn" type="button" data-menu-close>
               <svg class="mobaile-menu_close-icon">
                 <use href="./images/icons.svg#close-modal"></use>
               </svg>
@@ -484,14 +483,14 @@
       </div>
     </footer>
     <!--modal window-->
-     <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-slose-btn" data-modal-close type="button">
           <svg class="modal-slose-btn-icon">
             <use href="./images/icons.svg#close-modal"></use>
           </svg>
         </button>
-        
+
         <p class="modal-form-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-form-field">
@@ -585,7 +584,8 @@
           </button>
         </form>
       </div>
-    </div>  -->
+    </div>
+    -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

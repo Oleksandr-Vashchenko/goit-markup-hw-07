@@ -43,6 +43,15 @@ button {
   cursor: pointer;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 /*=====================================componets============================================*/
 
 .title {
@@ -191,12 +200,6 @@ body {
   background-color: var(--withe);
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .mobaile-menu_container {
   height: 100%;
   padding-top: 80px;
@@ -205,13 +208,12 @@ body {
   padding-right: 40px;
 
   position: relative;
+  overflow-y: auto;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-
 
 .mobaile-menu_close-btn {
   background-color: transparent;
@@ -230,8 +232,6 @@ body {
   top: 24px;
   right: 15px;
 }
-
-
 
 .mobaile-nav-list {
   display: flex;
