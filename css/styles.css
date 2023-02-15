@@ -202,9 +202,7 @@ body {
 .company-icon-box {
   display: none;
 }
-.activity-company-title {
-  text-align: center;
-}
+
 /*=============================work======================================*/
 .our-work {
   display: none;
@@ -218,7 +216,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: 72px;
+  
 }
 
 .card-team {

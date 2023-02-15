@@ -172,6 +172,14 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
  /*=======================hiro====================*/
+   /*=============================team======================================*/
+.team-list {
+  row-gap: 72px;
+}
+
+.activity-company-title {
+  text-align: center;
+}
 }
 
 /*============428px-768px*/
@@ -184,4 +192,5 @@
   .main-title {
     font-size: 36px;
   }
+
 }
