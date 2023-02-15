@@ -180,6 +180,7 @@
 .activity-company-title {
   text-align: center;
 }
+
 }
 
 /*============428px-768px*/
@@ -192,5 +193,8 @@
   .main-title {
     font-size: 36px;
   }
-
+ /*customers*/
+ .customers-list{
+  column-gap: 16px;
+}
 }

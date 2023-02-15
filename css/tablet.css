@@ -173,6 +173,18 @@
   .activity-company-text {
     font-weight: 500;
   }
+
+  .company-icon-box {
+    display: none;
+  }
+     /*work*/
+  .our-work {
+    display: none;
+  }
+   /*customers*/
+ .customers-list{
+  row-gap: 72px;
+}
 }
 
 /*=================768px-1200px*/
