@@ -1,3 +1,4 @@
+/* 1200-<*/
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 120px;
@@ -9,6 +10,9 @@
   }
 
   /*==================================heder====================================*/
+  .logo{
+    line-height: 1.3;
+  }
   .contact-list {
     flex-direction: row;
   }
@@ -29,7 +33,7 @@
   /*==================================hero====================================*/
 
   .hero {
-    max-width: 1440px;
+    max-width: 1200px;
     padding-top: 188px;
     padding-bottom: 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),

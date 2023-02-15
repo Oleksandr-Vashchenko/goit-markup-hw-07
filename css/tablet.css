@@ -1,3 +1,4 @@
+/*768-<*/
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -7,13 +8,12 @@
     display: none;
   }
 
-  .mobaile-menu{
+  .mobaile-menu {
     display: none;
   }
 
   /*==================================heder====================================*/
 
-  .heder-container,
   .nav,
   .nav-list {
     display: flex;
@@ -53,13 +53,10 @@
 
   .contact-list {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    column-gap: 4px;
   }
 
   .contact-mail {
-    display: inline-block;
     font-style: normal;
     color: inherit;
 
@@ -83,21 +80,17 @@
   }
   /*==================================heder====================================*/
   /*==================================hero====================================*/
-
-  .hero {
-    max-width: 768px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero/tablet-hiro.jpg);
-  }
-
   .main-title {
-    margin-bottom: 40px;
+    font-size: 56px;
+  }
+  .modal-btn:hover,
+  .modal-btn:focus {
+    background-color: var(--Primary-brand-accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
   /*==================================hero====================================*/
   /*===========================activity-company================================*/
   .activity-company-list {
-    display: flex;
-    flex-wrap: wrap;
     column-gap: 24px;
   }
   .activity-company-item {
@@ -158,4 +151,51 @@
     padding: 72px 24px 24px 24px;
   }
   /*=================================modal window==========================*/
+}
+
+/*================================0-1200px=========*/
+/*heder*/
+@media screen and (max-width: 1200px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  /*heder*/
+  .logo {
+    line-height: 1.16;
+  }
+  /*hiro*/
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  /*activity-company*/
+  .activity-company-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .activity-company-text {
+    font-weight: 500;
+  }
+}
+
+/*=================768px-1200px*/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  /*heder*/
+  .contact-list {
+    flex-direction: column;
+    column-gap: 4px;
+  }
+  /*hero*/
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/tablet-hiro.jpg);
+  }
+  .main-title {
+    margin-bottom: 40px;
+  }
+  /*hero*/
 }
