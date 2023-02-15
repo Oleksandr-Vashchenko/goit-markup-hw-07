@@ -124,13 +124,13 @@
   .social-media,
   .footer-form {
     align-items: flex-start;
+    
   }
 
-  .container-logo,
-  .footer-form {
-    margin-left: 92px;
+  .footer-form{
+    flex-direction: column;
   }
-
+ 
   .footer-input-container {
     flex-direction: row;
     column-gap: 24px;
@@ -177,14 +177,19 @@
   .company-icon-box {
     display: none;
   }
-     /*work*/
+  /*work*/
   .our-work {
     display: none;
   }
-   /*customers*/
- .customers-list{
-  row-gap: 72px;
-}
+  /*customers*/
+  .customers-list {
+    row-gap: 72px;
+  }
+  /*footer*/
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 }
 
 /*=================768px-1200px*/
@@ -203,5 +208,10 @@
   .main-title {
     margin-bottom: 40px;
   }
-  /*hero*/
+  
+  /*footer*/
+  .container-logo,
+  .footer-form {
+    margin-left: 92px;
+  }
 }

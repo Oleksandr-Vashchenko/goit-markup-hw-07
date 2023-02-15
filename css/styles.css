@@ -109,10 +109,6 @@ body {
 
 /*==================================logo styles====================================*/
 
-.logo-withe {
-  color: var(--light);
-  display: inline-block;
-}
 /*====================0-428px==============*/
 @media screen and (max-width: 428px) {
   /* heder*/
@@ -288,16 +284,12 @@ body {
   fill: var(--Primary-brand-accent);
 }
 /*==================================customers=================================*/
-/*==================================footer====================================*/
+/*==================================footer=================================*/
 .footer {
   background-color: #2e2f42;
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
-
 .footer-container {
-  display: flex;
-  flex-direction: column;
+  
   row-gap: 72px;
 }
 
@@ -306,6 +298,10 @@ body {
   flex-direction: column;
   align-items: center;
   row-gap: 16px;
+}
+
+.logo-withe {
+  color: var(--light);
 }
 
 .footer-text {
@@ -367,8 +363,8 @@ body {
 .footer-form,
 .footer-input-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   row-gap: 16px;
 }
 .footer-form-input-desc {
@@ -403,7 +399,7 @@ body {
 
   position: relative;
   color: var(--withe);
-
+ 
   padding: 8px 64px 8px 24px;
   background: var(--Primary-brand);
   border-radius: 4px;

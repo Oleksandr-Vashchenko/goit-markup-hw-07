@@ -180,7 +180,12 @@
 .activity-company-title {
   text-align: center;
 }
-
+/*footer*/
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  
+}
 }
 
 /*============428px-768px*/
