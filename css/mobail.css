@@ -1,5 +1,5 @@
 /* 428-<*/
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 428px;
     margin-left: auto;
@@ -14,11 +14,14 @@
   .modal {
     width: 392px;
   }
-  /*=================================modal window============*/
+  /*custom-check-box*/
+  .modal-check-box-desc {
+    font-size: 12px;
+  }
 }
 
 /*===========0-768px*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-list {
     display: none;
   }
@@ -53,10 +56,14 @@
     height: 100%;
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    transition: transform var(--transition-dur-and-func) ;
 
     background-color: var(--withe);
+
   }
 
   .mobaile-menu_container {
@@ -180,16 +187,20 @@
 .activity-company-title {
   text-align: center;
 }
+ /*customers*/
+ .customers-list{
+  column-gap: 16px;
+}
 /*footer*/
 .footer-container {
   display: flex;
   flex-direction: column;
-  
-}
+  }
+
 }
 
 /*============428px-768px*/
-@media screen and (min-width: 428px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   /* hiro*/
   .hero {
     max-width: 428px;
@@ -198,8 +209,5 @@
   .main-title {
     font-size: 36px;
   }
- /*customers*/
- .customers-list{
-  column-gap: 16px;
-}
+
 }
