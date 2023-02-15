@@ -17,19 +17,23 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobail.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
-    <!--header-->
-    <header class="header border-header">
+     <!--header-->
+     <header class="header border-header">
       <div class="container heder-container">
         <nav class="nav">
           <a class="logo logo-header" href="">WEB<span class="logo-dark">STUDIO</span></a>
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="./index.html">Studio</a></li>
+            <li class="nav-item"><a class="nav-link " href="./index.html">Studio</a></li>
             <li class="nav-item"><a class="nav-link active" href="">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
+
         <address class="contact">
           <ul class="contact-list">
             <li class="contact-item">
@@ -40,6 +44,73 @@
             </li>
           </ul>
         </address>
+
+        <button class="mobaile-menu-open" type="button" data-menu-open>
+          <svg class="mobaile-menu-open_icon">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="mobaile-menu is-hidden" data-menu>
+        <div class="container mobaile-menu_container">
+          <div>
+            <button class="mobaile-menu_close-btn" type="button" data-menu-close>
+              <svg class="mobaile-menu_close-icon">
+                <use href="./images/icons.svg#close-modal"></use>
+              </svg>
+            </button>
+            <nav class="mobaile-nav">
+              <ul class="mobaile-nav-list">
+                <li class="mobaile-nav-item"><a class="mobaile-nav-link" href="./index.html">Studio</a></li>
+                <li class="mobaile-nav-item"><a class="mobaile-nav-link" href="">Portfolio</a></li>
+                <li class="mobaile-nav-item"><a class="mobaile-nav-link" href="">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mobaile-addr">
+              <ul class="mobaile-addr-list">
+                <li class="mobaile-addr-item">
+                  <a class="mobaile-addr_link-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobaile-addr-item">
+                  <a class="mobaile-addr_link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+            </address>
+            <ul class="mobaile-icon-list">
+              <li class="mobaile-icon-item">
+                <a class="mobaile-icon-link" href=""
+                  ><svg class="mobaile-icon">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobaile-icon-item">
+                <a class="mobaile-icon-link" href=""
+                  ><svg class="mobaile-icon">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobaile-icon-item">
+                <a class="mobaile-icon-link" href=""
+                  ><svg class="mobaile-icon">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobaile-icon-item">
+                <a class="mobaile-icon-link" href=""
+                  ><svg class="mobaile-icon">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -220,7 +291,7 @@
     </main>
 
      <!--footer-->
-     <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="container-logo">
           <a class="logo logo-footer" href="">WEB<span class="logo-withe">STUDIO</span></a>
@@ -262,30 +333,34 @@
             </li>
           </ul>
         </div>
-        <!--footer-form-->
+
         <form class="footer-form">
           <label class="footer-form-input-desc" for="footer-email">Subscribe</label>
-          <input
-            class="footer-form-input"
-            type="email"
-            name="user_email"
-            id="footer-email"
-            placeholder="E-mail"
-            required
-            title="Email"
-            minlength="2"
-          />
+          <div class="footer-input-container">
+            <input
+              class="footer-form-input"
+              type="email"
+              name="user_email"
+              id="footer-email"
+              placeholder="E-mail"
+              required
+              title="Email"
+              minlength="2"
+            />
 
-          <button class="footer-btn" type="submit">
-            Subscribe
-            <span class="footer-form-btn">
-              <svg class="footer-form-icon">
-                <use href="./images/icons.svg#frame"></use>
-              </svg>
-            </span>
-          </button>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <span class="footer-form-btn">
+                <svg class="footer-form-icon">
+                  <use href="./images/icons.svg#frame"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
         </form>
       </div>
-    </footer>
+    </footer> 
+    
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
