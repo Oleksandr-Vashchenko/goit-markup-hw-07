@@ -60,10 +60,9 @@
     left: 50%;
 
     transform: translate(-50%, -50%);
-    transition: transform var(--transition-dur-and-func) ;
+    transition: transform var(--transition-dur-and-func);
 
     background-color: var(--withe);
-
   }
 
   .mobaile-menu_container {
@@ -169,42 +168,41 @@
   }
   /*=======================header====================*/
   /*=======================hiro===================*/
- .hero{
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero/hiro-mobail.jpg);
- }
- @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx){
-    .hero{
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero/hiro-mobail-2x.jpg);
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/hiro-mobail.jpg);
   }
- 
-
- .modal-btn:hover {
-  background-color: var(--Primary-brand-accent);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
- /*=======================hiro====================*/
-   /*=============================team======================================*/
-.team-list {
-  row-gap: 72px;
+  @media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx){
+  .hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  url(../images/hero/hiro-mobail-2x.jpg);
+} 
 }
 
-.activity-company-title {
-  text-align: center;
-}
- /*customers*/
- .customers-list{
-  column-gap: 16px;
-}
-/*footer*/
-.footer-container {
-  display: flex;
-  flex-direction: column;
+  .modal-btn:hover {
+    background-color: var(--Primary-brand-accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  /*=======================hiro====================*/
+  /*=============================team======================================*/
+  .team-list {
+    row-gap: 72px;
   }
 
+  .activity-company-title {
+    text-align: center;
+  }
+  /*customers*/
+  .customers-list {
+    column-gap: 16px;
+  }
+  /*footer*/
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*============428px-768px*/
@@ -217,5 +215,4 @@
   .main-title {
     font-size: 36px;
   }
-
 }

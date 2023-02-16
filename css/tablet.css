@@ -124,13 +124,12 @@
   .social-media,
   .footer-form {
     align-items: flex-start;
-    
   }
 
-  .footer-form{
+  .footer-form {
     flex-direction: column;
   }
- 
+
   .footer-input-container {
     flex-direction: row;
     column-gap: 24px;
@@ -206,16 +205,17 @@
       url(../images/hero/tablet-hiro.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx){
-    .hero{
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero/tablet-hiro-2x.jpg);
+        url(../images/hero/tablet-hiro-2x.jpg);
+    }
   }
   .main-title {
     margin-bottom: 40px;
   }
-  
+
   /*footer*/
   .container-logo,
   .footer-form {
