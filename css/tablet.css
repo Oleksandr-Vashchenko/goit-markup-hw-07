@@ -193,7 +193,7 @@
 }
 
 /*=================768px-1200px*/
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   /*heder*/
   .contact-list {
     flex-direction: column;
@@ -204,6 +204,13 @@
     max-width: 768px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero/tablet-hiro.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx){
+    .hero{
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/tablet-hiro-2x.jpg);
   }
   .main-title {
     margin-bottom: 40px;

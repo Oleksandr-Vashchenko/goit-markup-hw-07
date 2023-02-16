@@ -173,6 +173,14 @@
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero/hiro-mobail.jpg);
  }
+ @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx){
+    .hero{
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/hiro-mobail-2x.jpg);
+  }
+ 
 
  .modal-btn:hover {
   background-color: var(--Primary-brand-accent);
