@@ -51,7 +51,7 @@
           </svg>
         </button>
       </div>
-      
+
       <div class="mobaile-menu is-hidden" data-menu>
         <div class="container mobaile-menu_container">
           <div>
@@ -63,7 +63,9 @@
             <nav class="mobaile-nav">
               <ul class="mobaile-nav-list">
                 <li class="mobaile-nav-item"><a class="mobaile-nav-link" href="">Studio</a></li>
-                <li class="mobaile-nav-item"><a class="mobaile-nav-link" href="./portfolio.html">Portfolio</a></li>
+                <li class="mobaile-nav-item">
+                  <a class="mobaile-nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
                 <li class="mobaile-nav-item"><a class="mobaile-nav-link" href="">Contacts</a></li>
               </ul>
             </nav>
@@ -75,7 +77,9 @@
                   <a class="mobaile-addr_link-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
                 <li class="mobaile-addr-item">
-                  <a class="mobaile-addr_link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  <a class="mobaile-addr_link-mail" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
                 </li>
               </ul>
             </address>
@@ -120,10 +124,10 @@
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="btn modal-btn" data-modal-open type="button">Order Service</button>
         </div>
-      </section> 
+      </section>
 
       <!--activity-company-->
-       <section class="section activity-company">
+      <section class="section activity-company">
         <div class="container">
           <h2 class="hidden-title">work</h2>
           <ul class="activity-company-list">
@@ -180,7 +184,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
       <!--work-->
       <section class="section our-work">
@@ -188,27 +192,51 @@
           <h2 class="title our-work-title">What are we doing</h2>
           <ul class="our-work-list">
             <li class="our-work-item">
-              <img class="our-work-img" src="./images/job/pc.jpg" alt="photo" width="360" />
+              <img
+                srcset="./images/job/pc.jpg 1x, ./images/job/pc-2x.jpg 2x"
+                class="our-work-img"
+                src="./images/job/pc.jpg"
+                alt="photo"
+                width="360"
+              />
             </li>
 
             <li class="our-work-item">
-              <img class="our-work-img" src="./images/job/telephone.jpg" alt="photo" width="360" />
+              <img
+                srcset="./images/job/telephone.jpg 1x, ./images/job/telephone-2x.jpg 2x"
+                class="our-work-img"
+                src="./images/job/telephone.jpg"
+                alt="photo"
+                width="360"
+              />
             </li>
 
             <li class="our-work-item">
-              <img class="our-work-img" src="./images/job/laptop.jpg" alt="photo" width="360" />
+              <img
+                srcset="./images/job/laptop.jpg 1x, ./images/job/laptop-2x.jpg 2x"
+                class="our-work-img"
+                src="./images/job/laptop.jpg"
+                alt="photo"
+                width="360"
+              />
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
       <!--team-->
-       <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="title team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img class="team-img" src="./images/team/Product.jpg" alt="photo" width="264" />
+              <img
+                srcset="./images/team/Product.jpg 1x, ./images/team/Product-2x.jpg 2x"
+                class="team-img"
+                src="./images/team/Product.jpg"
+                alt="photo"
+                width="264"
+              />
               <div class="card-content card-team">
                 <h3 class="suptitle developer-name">Mark Guerrero</h3>
                 <p class="developer-descriptions">Product Designer</p>
@@ -246,7 +274,13 @@
             </li>
 
             <li class="team-item">
-              <img class="team-img" src="./images/team/Frontend.jpg" alt="photo" width="264" />
+              <img
+                srcset="./images/team/Frontend.jpg 1x, ./images/team/Frontend-2x.jpg 2x"
+                class="team-img"
+                src="./images/team/Frontend.jpg"
+                alt="photo"
+                width="264"
+              />
               <div class="card-content card-team">
                 <h3 class="suptitle developer-name">Tom Ford</h3>
                 <p class="developer-descriptions">Frontend Developer</p>
@@ -284,7 +318,13 @@
             </li>
 
             <li class="team-item">
-              <img class="team-img" src="./images/team/Marketing.jpg" alt="photo" width="264" />
+              <img
+                srcset="./images/team/Marketing.jpg 1x, ./images/team/Marketing-2x.jpg 2x"
+                class="team-img"
+                src="./images/team/Marketing.jpg"
+                alt="photo"
+                width="264"
+              />
               <div class="card-content card-team">
                 <h3 class="suptitle developer-name">Camila Garcia</h3>
                 <p class="developer-descriptions">Marketing</p>
@@ -322,7 +362,13 @@
             </li>
 
             <li class="team-item">
-              <img class="team-img" src="./images/team/UI.jpg" alt="photo" width="264" />
+              <img
+                srcset="./images/team/UI.jpg 1x, ./images/team/UI-2x.jpg 2x"
+                class="team-img"
+                src="./images/team/UI.jpg"
+                alt="photo"
+                width="264"
+              />
               <div class="card-content card-team">
                 <h3 class="suptitle developer-name">Daniel Wilson</h3>
                 <p class="developer-descriptions">UI Designer</p>
@@ -360,7 +406,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
     </main>
     <!--customers-->
     <section class="section">
@@ -411,7 +457,7 @@
           </li>
         </ul>
       </div>
-    </section> 
+    </section>
 
     <!--footer-->
     <footer class="footer">
@@ -482,7 +528,7 @@
           </div>
         </form>
       </div>
-    </footer> 
+    </footer>
     <!--modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -586,7 +632,7 @@
         </form>
       </div>
     </div>
-    
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
