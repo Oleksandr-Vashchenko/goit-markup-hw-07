@@ -10,10 +10,7 @@
     font-size: 36px;
   }
   /*==================================heder==================*/
-  /*=================================modal window============*/
-  .modal {
-    width: 392px;
-  }
+ 
   /*custom-check-box*/
   .modal-check-box-desc {
     font-size: 12px;
@@ -173,13 +170,13 @@
       url(../images/hero/hiro-mobail.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx){
-  .hero{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-  url(../images/hero/hiro-mobail-2x.jpg);
-} 
-}
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/hiro-mobail-2x.jpg);
+    }
+  }
 
   .modal-btn:hover {
     background-color: var(--Primary-brand-accent);
@@ -203,16 +200,23 @@ screen and (min-resolution: 2dppx){
     display: flex;
     flex-direction: column;
   }
+  /*modal window*/
+  .modal {
+    height: 90%;
+    padding: 72px 16px 24px 16px;
+    overflow-y: scroll;
+  }
 }
 
 /*============428px-768px*/
 @media screen and (min-width: 480px) and (max-width: 768px) {
   /* hiro*/
-  .hero {
-    max-width: 428px;
-  }
-
+ 
   .main-title {
     font-size: 36px;
+  }
+   /*=================================modal window============*/
+   .modal {
+    width: 392px;
   }
 }
